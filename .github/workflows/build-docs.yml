@@ -33,7 +33,6 @@ jobs:
         run: |
           black .
       - name: Run sphinx-build through the Makefile
-        uses: actions/checkout@v3
         run: |
           make html
       - name: Push to gh-pages
