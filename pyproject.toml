@@ -4,7 +4,7 @@
 
 [tool.poetry]
 name = "python-onix"
-version = "0.0.2"
+version = "0.0.3"
 description = "Dataclasses for EDItEUR's ONIX standards"
 authors = ["Ömer Boratav <omerboratav@gmail.com>"]
 readme = "README.md"
