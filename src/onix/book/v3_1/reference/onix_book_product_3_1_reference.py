@@ -35036,6 +35036,21 @@ class Onixmessage:
             ),
         },
     )
+
+    @property
+    def products(self) -> List[Product]:
+        """
+        Convenience function to return all products in the message,
+        or return an empty list if the message is intentionally blank
+        (eg. an empty delta update).
+        :return: A list of products included in this message, or an empty list
+        :rtype: list
+        """
+        if type(self.no_product_or_product[0]) == NoProduct:
+            return []
+        else:
+            return self.no_product_or_product
+
     refname: Optional[OnixmessageRefname] = field(
         default=None,
         metadata={
