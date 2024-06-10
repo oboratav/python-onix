@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import ForwardRef, List, Optional, Union
 
-__NAMESPACE__ = "http://ns.editeur.org/onix/3.0/short"
+__NAMESPACE__ = "http://ns.editeur.org/onix/3.1/short"
 
 
 class Scope(Enum):
@@ -87,7 +87,7 @@ class BigDir(Enum):
 class BlockAbstract:
     class Meta:
         name = "block"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     any_element: Optional[object] = field(
         default=None,
@@ -107,7 +107,7 @@ class BlockquoteDir(Enum):
 class Blocktext:
     class Meta:
         name = "blocktext"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     any_element: Optional[object] = field(
         default=None,
@@ -122,7 +122,7 @@ class Blocktext:
 class Br:
     class Meta:
         name = "br"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -240,7 +240,7 @@ class EmDir(Enum):
 class Fontstyle:
     class Meta:
         name = "fontstyle"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     any_element: Optional[object] = field(
         default=None,
@@ -255,7 +255,7 @@ class Fontstyle:
 class Gloss:
     class Meta:
         name = "gloss"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     any_element: Optional[object] = field(
         default=None,
@@ -300,7 +300,7 @@ class H6Dir(Enum):
 class Heading:
     class Meta:
         name = "heading"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     any_element: Optional[object] = field(
         default=None,
@@ -334,7 +334,7 @@ class ImgIsmap(Enum):
 class InlineAbstract:
     class Meta:
         name = "inline"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     any_element: Optional[object] = field(
         default=None,
@@ -359,7 +359,7 @@ class LiDir(Enum):
 class Lists:
     class Meta:
         name = "lists"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     any_element: Optional[object] = field(
         default=None,
@@ -397,7 +397,7 @@ class PDir(Enum):
 class Phrase:
     class Meta:
         name = "phrase"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     any_element: Optional[object] = field(
         default=None,
@@ -467,7 +467,7 @@ class SpanDir(Enum):
 class Special:
     class Meta:
         name = "special"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     any_element: Optional[object] = field(
         default=None,
@@ -637,7 +637,7 @@ class VarDir(Enum):
 class Area:
     class Meta:
         name = "area"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -713,7 +713,7 @@ class Area:
 class Col:
     class Meta:
         name = "col"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -794,7 +794,7 @@ class Col:
 class Hr:
     class Meta:
         name = "hr"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -839,7 +839,7 @@ class Hr:
 class Img:
     class Meta:
         name = "img"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -928,7 +928,7 @@ class Img:
 class Rp:
     class Meta:
         name = "rp"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -989,127 +989,127 @@ class Inline:
                 {
                     "name": "a",
                     "type": ForwardRef("A"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "ruby",
                     "type": ForwardRef("Ruby"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "sup",
                     "type": ForwardRef("Sup"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "sub",
                     "type": ForwardRef("Sub"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "q",
                     "type": ForwardRef("Q"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "acronym",
                     "type": ForwardRef("Acronym"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "abbr",
                     "type": ForwardRef("Abbr"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "cite",
                     "type": ForwardRef("Cite"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "var",
                     "type": ForwardRef("Var"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "kbd",
                     "type": ForwardRef("Kbd"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "samp",
                     "type": ForwardRef("Samp"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "code",
                     "type": ForwardRef("Code"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "dfn",
                     "type": ForwardRef("Dfn"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "strong",
                     "type": ForwardRef("Strong"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "em",
                     "type": ForwardRef("Em"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "small",
                     "type": ForwardRef("Small"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "big",
                     "type": ForwardRef("Big"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "b",
                     "type": ForwardRef("B"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "i",
                     "type": ForwardRef("I"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "tt",
                     "type": ForwardRef("Tt"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "map",
                     "type": ForwardRef("Map"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "img",
                     "type": Img,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "br",
                     "type": Br,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "bdo",
                     "type": ForwardRef("Bdo"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "span",
                     "type": ForwardRef("Span"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
             ),
         },
@@ -1120,7 +1120,7 @@ class Inline:
 class Colgroup:
     class Meta:
         name = "colgroup"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     col: List[Col] = field(
         default_factory=list,
@@ -1207,7 +1207,7 @@ class Colgroup:
 class Abbr(Inline):
     class Meta:
         name = "abbr"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1252,7 +1252,7 @@ class Abbr(Inline):
 class Acronym(Inline):
     class Meta:
         name = "acronym"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1297,7 +1297,7 @@ class Acronym(Inline):
 class Address(Inline):
     class Meta:
         name = "address"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1342,7 +1342,7 @@ class Address(Inline):
 class B(Inline):
     class Meta:
         name = "b"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1387,7 +1387,7 @@ class B(Inline):
 class Bdo(Inline):
     class Meta:
         name = "bdo"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1433,7 +1433,7 @@ class Bdo(Inline):
 class Big(Inline):
     class Meta:
         name = "big"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1478,7 +1478,7 @@ class Big(Inline):
 class Caption(Inline):
     class Meta:
         name = "caption"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1523,7 +1523,7 @@ class Caption(Inline):
 class Cite(Inline):
     class Meta:
         name = "cite"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1568,7 +1568,7 @@ class Cite(Inline):
 class Code(Inline):
     class Meta:
         name = "code"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1613,7 +1613,7 @@ class Code(Inline):
 class Dfn(Inline):
     class Meta:
         name = "dfn"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1658,7 +1658,7 @@ class Dfn(Inline):
 class Dt(Inline):
     class Meta:
         name = "dt"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1703,7 +1703,7 @@ class Dt(Inline):
 class Em(Inline):
     class Meta:
         name = "em"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1748,7 +1748,7 @@ class Em(Inline):
 class H1(Inline):
     class Meta:
         name = "h1"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1793,7 +1793,7 @@ class H1(Inline):
 class H2(Inline):
     class Meta:
         name = "h2"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1838,7 +1838,7 @@ class H2(Inline):
 class H3(Inline):
     class Meta:
         name = "h3"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1883,7 +1883,7 @@ class H3(Inline):
 class H4(Inline):
     class Meta:
         name = "h4"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1928,7 +1928,7 @@ class H4(Inline):
 class H5(Inline):
     class Meta:
         name = "h5"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -1973,7 +1973,7 @@ class H5(Inline):
 class H6(Inline):
     class Meta:
         name = "h6"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2018,7 +2018,7 @@ class H6(Inline):
 class I(Inline):
     class Meta:
         name = "i"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2063,7 +2063,7 @@ class I(Inline):
 class Kbd(Inline):
     class Meta:
         name = "kbd"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2108,7 +2108,7 @@ class Kbd(Inline):
 class P(Inline):
     class Meta:
         name = "p"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2153,7 +2153,7 @@ class P(Inline):
 class Q(Inline):
     class Meta:
         name = "q"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2204,7 +2204,7 @@ class Q(Inline):
 class Samp(Inline):
     class Meta:
         name = "samp"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2249,7 +2249,7 @@ class Samp(Inline):
 class Small(Inline):
     class Meta:
         name = "small"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2294,7 +2294,7 @@ class Small(Inline):
 class Span(Inline):
     class Meta:
         name = "span"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2339,7 +2339,7 @@ class Span(Inline):
 class Strong(Inline):
     class Meta:
         name = "strong"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2384,7 +2384,7 @@ class Strong(Inline):
 class Sub(Inline):
     class Meta:
         name = "sub"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2429,7 +2429,7 @@ class Sub(Inline):
 class Sup(Inline):
     class Meta:
         name = "sup"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2474,7 +2474,7 @@ class Sup(Inline):
 class Tt(Inline):
     class Meta:
         name = "tt"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2519,7 +2519,7 @@ class Tt(Inline):
 class Var(Inline):
     class Meta:
         name = "var"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2589,82 +2589,82 @@ class Block:
                 {
                     "name": "table",
                     "type": ForwardRef("Table"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "p",
                     "type": P,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "div",
                     "type": ForwardRef("Div"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "blockquote",
                     "type": ForwardRef("Blockquote"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "pre",
                     "type": ForwardRef("Pre"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "hr",
                     "type": Hr,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "address",
                     "type": Address,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "dl",
                     "type": ForwardRef("Dl"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "ol",
                     "type": ForwardRef("Ol"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "ul",
                     "type": ForwardRef("Ul"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h6",
                     "type": H6,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h5",
                     "type": H5,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h4",
                     "type": H4,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h3",
                     "type": H3,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h2",
                     "type": H2,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h1",
                     "type": H1,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
             ),
         },
@@ -2686,122 +2686,122 @@ class AContent:
                 {
                     "name": "map",
                     "type": ForwardRef("Map"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "img",
                     "type": Img,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "br",
                     "type": Br,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "bdo",
                     "type": Bdo,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "span",
                     "type": Span,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "small",
                     "type": Small,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "big",
                     "type": Big,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "b",
                     "type": B,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "i",
                     "type": I,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "tt",
                     "type": Tt,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "sup",
                     "type": Sup,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "sub",
                     "type": Sub,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "q",
                     "type": Q,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "acronym",
                     "type": Acronym,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "abbr",
                     "type": Abbr,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "cite",
                     "type": Cite,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "var",
                     "type": Var,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "kbd",
                     "type": Kbd,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "samp",
                     "type": Samp,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "code",
                     "type": Code,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "dfn",
                     "type": Dfn,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "strong",
                     "type": Strong,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "em",
                     "type": Em,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "ruby",
                     "type": ForwardRef("Ruby"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
             ),
         },
@@ -2812,7 +2812,7 @@ class AContent:
 class A(AContent):
     class Meta:
         name = "a"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2936,7 +2936,7 @@ class A(AContent):
 class Blockquote(Block):
     class Meta:
         name = "blockquote"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -2995,207 +2995,207 @@ class Flow:
                 {
                     "name": "table",
                     "type": ForwardRef("Table"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "p",
                     "type": P,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "div",
                     "type": ForwardRef("Div"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "blockquote",
                     "type": Blockquote,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "pre",
                     "type": ForwardRef("Pre"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "hr",
                     "type": Hr,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "address",
                     "type": Address,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "dl",
                     "type": ForwardRef("Dl"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "ol",
                     "type": ForwardRef("Ol"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "ul",
                     "type": ForwardRef("Ul"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h6",
                     "type": H6,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h5",
                     "type": H5,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h4",
                     "type": H4,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h3",
                     "type": H3,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h2",
                     "type": H2,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "h1",
                     "type": H1,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "a",
                     "type": ForwardRef("A"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "ruby",
                     "type": ForwardRef("Ruby"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "sup",
                     "type": Sup,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "sub",
                     "type": Sub,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "q",
                     "type": Q,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "acronym",
                     "type": Acronym,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "abbr",
                     "type": Abbr,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "cite",
                     "type": Cite,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "var",
                     "type": Var,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "kbd",
                     "type": Kbd,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "samp",
                     "type": Samp,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "code",
                     "type": Code,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "dfn",
                     "type": Dfn,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "strong",
                     "type": Strong,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "em",
                     "type": Em,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "small",
                     "type": Small,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "big",
                     "type": Big,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "b",
                     "type": B,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "i",
                     "type": I,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "tt",
                     "type": Tt,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "map",
                     "type": ForwardRef("Map"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "img",
                     "type": Img,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "br",
                     "type": Br,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "bdo",
                     "type": Bdo,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "span",
                     "type": Span,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
             ),
         },
@@ -3217,112 +3217,112 @@ class PreContent:
                 {
                     "name": "a",
                     "type": A,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "br",
                     "type": Br,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "span",
                     "type": Span,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "bdo",
                     "type": Bdo,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "map",
                     "type": ForwardRef("Map"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "tt",
                     "type": Tt,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "i",
                     "type": I,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "b",
                     "type": B,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "sup",
                     "type": Sup,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "sub",
                     "type": Sub,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "q",
                     "type": Q,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "acronym",
                     "type": Acronym,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "abbr",
                     "type": Abbr,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "cite",
                     "type": Cite,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "var",
                     "type": Var,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "kbd",
                     "type": Kbd,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "samp",
                     "type": Samp,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "code",
                     "type": Code,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "dfn",
                     "type": Dfn,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "strong",
                     "type": Strong,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "em",
                     "type": Em,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "ruby",
                     "type": ForwardRef("Ruby"),
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
             ),
         },
@@ -3333,7 +3333,7 @@ class PreContent:
 class Dd(Flow):
     class Meta:
         name = "dd"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -3378,7 +3378,7 @@ class Dd(Flow):
 class Div(Flow):
     class Meta:
         name = "div"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -3423,7 +3423,7 @@ class Div(Flow):
 class Li(Flow):
     class Meta:
         name = "li"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -3468,7 +3468,7 @@ class Li(Flow):
 class Pre(PreContent):
     class Meta:
         name = "pre"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -3513,7 +3513,7 @@ class Pre(PreContent):
 class Td(Flow):
     class Meta:
         name = "td"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -3619,7 +3619,7 @@ class Td(Flow):
 class Th(Flow):
     class Meta:
         name = "th"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -3725,7 +3725,7 @@ class Th(Flow):
 class Dl:
     class Meta:
         name = "dl"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     dt_or_dd: List[Union[Dt, Dd]] = field(
         default_factory=list,
@@ -3786,7 +3786,7 @@ class Dl:
 class Ol:
     class Meta:
         name = "ol"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     li: List[Li] = field(
         default_factory=list,
@@ -3851,7 +3851,7 @@ class Ol:
 class Tr:
     class Meta:
         name = "tr"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     th_or_td: List[Union[Th, Td]] = field(
         default_factory=list,
@@ -3936,7 +3936,7 @@ class Tr:
 class Ul:
     class Meta:
         name = "ul"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     li: List[Li] = field(
         default_factory=list,
@@ -3988,7 +3988,7 @@ class Ul:
 class Tbody:
     class Meta:
         name = "tbody"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     tr: List[Tr] = field(
         default_factory=list,
@@ -4064,7 +4064,7 @@ class Tbody:
 class Tfoot:
     class Meta:
         name = "tfoot"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     tr: List[Tr] = field(
         default_factory=list,
@@ -4140,7 +4140,7 @@ class Tfoot:
 class Thead:
     class Meta:
         name = "thead"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     tr: List[Tr] = field(
         default_factory=list,
@@ -4216,7 +4216,7 @@ class Thead:
 class Table:
     class Meta:
         name = "table"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     caption: Optional[Caption] = field(
         default=None,
@@ -4353,7 +4353,7 @@ class Table:
 class Map:
     class Meta:
         name = "map"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     choice: List[
         Union[
@@ -4512,122 +4512,122 @@ class RubyContent:
                 {
                     "name": "a",
                     "type": A,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "map",
                     "type": Map,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "img",
                     "type": Img,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "br",
                     "type": Br,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "bdo",
                     "type": Bdo,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "span",
                     "type": Span,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "small",
                     "type": Small,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "big",
                     "type": Big,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "b",
                     "type": B,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "i",
                     "type": I,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "tt",
                     "type": Tt,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "sup",
                     "type": Sup,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "sub",
                     "type": Sub,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "q",
                     "type": Q,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "acronym",
                     "type": Acronym,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "abbr",
                     "type": Abbr,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "cite",
                     "type": Cite,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "var",
                     "type": Var,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "kbd",
                     "type": Kbd,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "samp",
                     "type": Samp,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "code",
                     "type": Code,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "dfn",
                     "type": Dfn,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "strong",
                     "type": Strong,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
                 {
                     "name": "em",
                     "type": Em,
-                    "namespace": "http://ns.editeur.org/onix/3.0/short",
+                    "namespace": "http://ns.editeur.org/onix/3.1/short",
                 },
             ),
         },
@@ -4638,7 +4638,7 @@ class RubyContent:
 class Rb(RubyContent):
     class Meta:
         name = "rb"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -4683,7 +4683,7 @@ class Rb(RubyContent):
 class Rt(RubyContent):
     class Meta:
         name = "rt"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     id: Optional[str] = field(
         default=None,
@@ -4734,7 +4734,7 @@ class Rt(RubyContent):
 class Rbc:
     class Meta:
         name = "rbc"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     rb: List[Rb] = field(
         default_factory=list,
@@ -4786,7 +4786,7 @@ class Rbc:
 class Rtc:
     class Meta:
         name = "rtc"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     rt: List[Rt] = field(
         default_factory=list,
@@ -4838,7 +4838,7 @@ class Rtc:
 class Ruby:
     class Meta:
         name = "ruby"
-        namespace = "http://ns.editeur.org/onix/3.0/short"
+        namespace = "http://ns.editeur.org/onix/3.1/short"
 
     rb_or_rbc: Optional[Union[Rb, Rbc]] = field(
         default=None,

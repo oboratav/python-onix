@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="python-onix",
-    version="0.0.2",
+    version="0.0.3",
     author="Ömer Boratav",
     author_email="omerboratav@gmail.com",
     description="Dataclasses for EDItEUR's ONIX standards",

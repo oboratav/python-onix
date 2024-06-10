@@ -1,6 +1,6 @@
 from enum import Enum
 
-__NAMESPACE__ = "http://ns.editeur.org/onix/3.0/short"
+__NAMESPACE__ = "http://ns.editeur.org/onix/3.1/short"
 
 
 class List1(Enum):
@@ -42,6 +42,15 @@ class List1(Enum):
     :cvar VALUE_09: Notice of acquisition Notice of acquisition of a
         product, by one publisher from another: sent by the acquiring
         publisher
+    :cvar VALUE_12: Update – SupplyDetail only ONIX Books 2.1 supply
+        update – &lt;SupplyDetail&gt; only. Not for use in ONIX 3.0 or
+        later
+    :cvar VALUE_13: Update – MarketRepresentation only ONIX Books 2.1
+        supply update – &lt;MarketRepresentation&gt; only. Not for use
+        in ONIX 3.0 or later
+    :cvar VALUE_14: Update – SupplyDetail and MarketRepresentation ONIX
+        Books 2.1 supply update – both &lt;SupplyDetail&gt; and
+        &lt;MarketRepresentation&gt;. Not for use in ONIX 3.0 or later
     :cvar VALUE_88: Test update (Partial) Only for use in ONIX 3.0 or
         later. Record may be processed for test purposes, but data
         should be discarded when testing is complete. Sender must ensure
@@ -60,6 +69,9 @@ class List1(Enum):
     VALUE_05 = "05"
     VALUE_08 = "08"
     VALUE_09 = "09"
+    VALUE_12 = "12"
+    VALUE_13 = "13"
+    VALUE_14 = "14"
     VALUE_88 = "88"
     VALUE_89 = "89"
 
@@ -121,6 +133,7 @@ class List102(Enum):
     :cvar VALUE_01: Proprietary Proprietary list of retail and other
         end-user sales outlet IDs. Note that &lt;IDTypeName&gt; is
         required with proprietary identifiers
+    :cvar VALUE_02: BIC sales outlet ID code Deprecated – use code 03
     :cvar VALUE_03: ONIX retail sales outlet ID code Use with ONIX
         retail and other end-user sales outlet IDs from List 139
     :cvar VALUE_04: Retail sales outlet GLN 13-digit GS1 global location
@@ -131,6 +144,7 @@ class List102(Enum):
     """
 
     VALUE_01 = "01"
+    VALUE_02 = "02"
     VALUE_03 = "03"
     VALUE_04 = "04"
     VALUE_05 = "05"
@@ -3434,17 +3448,6 @@ class List171(Enum):
     VALUE_03 = "03"
 
 
-class List172(Enum):
-    """
-    Currency zone.
-
-    :cvar EUR: Eurozone Countries that at the time being have the Euro
-        as their national currency. Deprecated
-    """
-
-    EUR = "EUR"
-
-
 class List173(Enum):
     """
     Price date role.
@@ -5213,6 +5216,10 @@ class List22(Enum):
         text in the original language is NOT part of the current product
     :cvar VALUE_03: Language of abstracts Where different from language
         of text: used mainly for serials
+    :cvar VALUE_04: Rights language Language to which specified rights
+        apply. Not for use in ONIX 3.0 or later
+    :cvar VALUE_05: Rights-excluded language Language to which specified
+        rights do not apply. Not for use in ONIX 3.0 or later
     :cvar VALUE_06: Original language in a multilingual edition Where
         the text in the original language is part of a bilingual or
         multilingual product
@@ -5255,6 +5262,8 @@ class List22(Enum):
     VALUE_01 = "01"
     VALUE_02 = "02"
     VALUE_03 = "03"
+    VALUE_04 = "04"
+    VALUE_05 = "05"
     VALUE_06 = "06"
     VALUE_07 = "07"
     VALUE_08 = "08"
@@ -5280,22 +5289,6 @@ class List228(Enum):
 
     VALUE_01 = "01"
     VALUE_06 = "06"
-
-
-class List229(Enum):
-    """
-    Gender – based on ISO 5218.
-
-    :cvar U: Unknown or unspecified Provides positive indication that
-        the gender is not known or is not specified by the sender for
-        any reason
-    :cvar F: Female
-    :cvar M: Male
-    """
-
-    U = "u"
-    F = "f"
-    M = "m"
 
 
 class List23(Enum):
@@ -5998,6 +5991,72 @@ class List255(Enum):
     AHL = "AHL"
 
 
+class List259(Enum):
+    """
+    Collection frequency code.
+
+    :cvar U: Unknown
+    :cvar I: Irregular No fixed publication schedule
+    :cvar E: Biennial Once every two years
+    :cvar A: Annual Yearly
+    :cvar B: Biannual Twice a year, or once per academic semester
+    :cvar T: Triannual Three times a year, or once per academic term
+    :cvar Q: Quarterly Four times a year
+    :cvar S: Bimonthly Six times per year
+    :cvar M: Monthly Once every month, or approximately twelve times per
+        year
+    :cvar F: Fortnightly Once every two weeks, or approximately twenty
+        five times per year
+    :cvar W: Weekly Or approximately fifty times per year
+    :cvar D: More frequently than weekly
+    :cvar X: No future publications Positive indication that the product
+        is the last to be published in the collection, or that no
+        further publications are planned
+    """
+
+    U = "u"
+    I = "i"
+    E = "e"
+    A = "a"
+    B = "b"
+    T = "t"
+    Q = "q"
+    S = "s"
+    M = "m"
+    F = "f"
+    W = "w"
+    D = "d"
+    X = "x"
+
+
+class List260(Enum):
+    """
+    Epublication license date role.
+
+    :cvar VALUE_14: Valid from Date on which a license becomes effective
+    :cvar VALUE_15: Valid until Date on which a license ceases to be
+        effective
+    :cvar VALUE_24: From… until date Combines From date and Until date
+        to define a period (both dates are inclusive). Use for example
+        with dateformat 06
+    """
+
+    VALUE_14 = "14"
+    VALUE_15 = "15"
+    VALUE_24 = "24"
+
+
+class List263(Enum):
+    """
+    Prize identifier type.
+
+    :cvar VALUE_01: Proprietary Note that &lt;IDTypeName&gt; is required
+        with proprietary identifiers
+    """
+
+    VALUE_01 = "01"
+
+
 class List27(Enum):
     """
     Subject scheme identifier.
@@ -6512,79 +6571,6 @@ class List27(Enum):
     D2 = "D2"
 
 
-class List28(Enum):
-    """
-    Audience type.
-
-    :cvar VALUE_01: General / adult For a non-specialist or ‘popular’
-        adult audience. Consider also adding an ONIX Adult audience
-        rating
-    :cvar VALUE_02: Children For a young audience typically up to about
-        the age of 12, not specifically for any educational purpose. An
-        audience range should also be included
-    :cvar VALUE_03: Teenage For a teenage or ‘young adult’ audience
-        typically from about the age of 12 to the late teens, not
-        specifically for any educational purpose. An audience range
-        should also be included
-    :cvar VALUE_04: Primary and secondary education Kindergarten, pre-
-        school, primary / elementary or secondary / high school
-        education. Note ‘secondary’ includes both level 2 and level 3
-        secondary education as defined in UNESCO’s ISCED 2011 (see
-        http://uis.unesco.org/en/topic/international-standard-
-        classification-education-isced). An audience range should also
-        be included
-    :cvar VALUE_11: Pre-primary education Equivalent to UNESCO’s ISCED
-        Level 0 – see http://uis.unesco.org/en/topic/international-
-        standard-classification-education-isced (note codes 11–14 are
-        specific subsets of the Primary and secondary education
-        audience, code 04). Only for use in ONIX 3.0 or later
-    :cvar VALUE_12: Primary education Equivalent to ISCED Level 1. Only
-        for use in ONIX 3.0 or later
-    :cvar VALUE_13: Lower secondary education Equivalent to ISCED Level
-        2 (general and vocational). Only for use in ONIX 3.0 or later
-    :cvar VALUE_14: Upper secondary education Equivalent to ISCED Level
-        3 (general and vocational). Only for use in ONIX 3.0 or later
-    :cvar VALUE_05: Tertiary education For tertiary education typically
-        in universities and colleges of higher education, equivalent to
-        ISCED Levels 5–7
-    :cvar VALUE_06: Professional and scholarly For an expert adult
-        audience, including professional development and academic
-        research
-    :cvar VALUE_08: Adult education For any adult audience in a formal
-        or semi-formal learning setting, eg vocational training and
-        apprenticeships (collectively, equivalent to ISCED Level 4), or
-        practical or recreational learning for adults
-    :cvar VALUE_07: EFL / TEFL / TESOL Intended for use in teaching and
-        learning English as a second, non-native or additional language.
-        Indication of the language level (eg CEFR) should be included
-        where possible. An audience range should also be included if the
-        product is (also) suitable for use in primary and secondary
-        education
-    :cvar VALUE_09: Second / additional language teaching Intended for
-        use in teaching and learning second, non-native or additional
-        languages (other than English), for example teaching German to
-        Spanish speakers. Indication of the language level (eg CEFR)
-        should be included where possible. An audience range should also
-        be included if the product is (also) suitable for use in primary
-        and secondary education. Prefer code 07 for products specific to
-        teaching English
-    """
-
-    VALUE_01 = "01"
-    VALUE_02 = "02"
-    VALUE_03 = "03"
-    VALUE_04 = "04"
-    VALUE_11 = "11"
-    VALUE_12 = "12"
-    VALUE_13 = "13"
-    VALUE_14 = "14"
-    VALUE_05 = "05"
-    VALUE_06 = "06"
-    VALUE_08 = "08"
-    VALUE_07 = "07"
-    VALUE_09 = "09"
-
-
 class List29(Enum):
     """
     Audience code type.
@@ -6944,8 +6930,13 @@ class List34(Enum):
     """
     Text format.
 
+    :cvar VALUE_00: ASCII text Deprecated: use code 06 or 07 as
+        appropriate
+    :cvar VALUE_01: SGML
     :cvar VALUE_02: HTML Other than XHTML
     :cvar VALUE_03: XML Other than XHTML
+    :cvar VALUE_04: PDF Deprecated: was formerly assigned both to PDF
+        and to XHTML
     :cvar VALUE_05: XHTML
     :cvar VALUE_06: Default text format Default: plain text containing
         no markup tags of any kind, except for the character entities
@@ -6961,13 +6952,36 @@ class List34(Enum):
         character set limited to the ASCII range, i.e. valid characters
         whose Unicode character numbers lie between 32 (space) and 126
         (tilde)
+    :cvar VALUE_08: PDF Replaces 04 for the &lt;TextFormat&gt; element,
+        but cannot of course be used as a textformat attribute
+    :cvar VALUE_09: Microsoft rich text format (RTF)
+    :cvar VALUE_10: Microsoft Word binary format (DOC)
+    :cvar VALUE_11: ECMA 376 WordprocessingML Office Open XML file
+        format / OOXML / DOCX
+    :cvar VALUE_12: ISO 26300 ODF ISO Open Document Format
+    :cvar VALUE_13: Corel Wordperfect binary format (DOC)
+    :cvar VALUE_14: EPUB The Open Publication Structure / OPS Container
+        Format standard of the International Digital Publishing Forum
+        (IDPF) [File extension .epub]
+    :cvar VALUE_15: XPS XML Paper Specification
     """
 
+    VALUE_00 = "00"
+    VALUE_01 = "01"
     VALUE_02 = "02"
     VALUE_03 = "03"
+    VALUE_04 = "04"
     VALUE_05 = "05"
     VALUE_06 = "06"
     VALUE_07 = "07"
+    VALUE_08 = "08"
+    VALUE_09 = "09"
+    VALUE_10 = "10"
+    VALUE_11 = "11"
+    VALUE_12 = "12"
+    VALUE_13 = "13"
+    VALUE_14 = "14"
+    VALUE_15 = "15"
 
 
 class List41(Enum):
@@ -7250,6 +7264,7 @@ class List45(Enum):
     :cvar VALUE_06: Published for/on behalf of
     :cvar VALUE_07: Published in association with Use also for
         ‘Published in cooperation with’
+    :cvar VALUE_08: Published on behalf of Deprecated: use code 06
     :cvar VALUE_09: New or acquiring publisher When ownership of a
         product or title is transferred from one publisher to another
     :cvar VALUE_10: Publishing group The group to which a publisher
@@ -7299,6 +7314,7 @@ class List45(Enum):
     VALUE_05 = "05"
     VALUE_06 = "06"
     VALUE_07 = "07"
+    VALUE_08 = "08"
     VALUE_09 = "09"
     VALUE_10 = "10"
     VALUE_11 = "11"
@@ -7894,6 +7910,8 @@ class List49(Enum):
         may need to be specified separately. ONLY valid in ONIX 3.0, and
         ONLY within P.26 – and this use is itself Deprecated. Use of an
         explicit list of countries instead of ECZ is strongly encouraged
+    :cvar ROW: Rest of world World except as otherwise specified. Not
+        for use in ONIX 3.0 or later
     :cvar WORLD: World In ONIX 3.0 and later, may ONLY be used in
         &lt;RegionsIncluded&gt;
     """
@@ -8249,6 +8267,7 @@ class List49(Enum):
     US_WV = "US-WV"
     US_WY = "US-WY"
     ECZ = "ECZ"
+    ROW = "ROW"
     WORLD = "WORLD"
 
 
@@ -8429,6 +8448,17 @@ class List51(Enum):
         &lt;RelatedProduct&gt;. The related product is the source of any
         print-equivalent page numbering present in the epublication
         (inverse of code 27)
+    :cvar VALUE_14: Epublication is distributed as &lt;Product&gt; is an
+        epublication ‘rendered’ as &lt;RelatedProduct&gt;: use in ONIX
+        2.1 only when the &lt;Product&gt; record describes a package of
+        electronic content which is available in multiple ‘renderings’
+        (coded 000 in &lt;EpubTypeCode&gt;). Not for use in ONIX 3.0 or
+        later
+    :cvar VALUE_15: Epublication is a rendering of &lt;Product&gt; is a
+        ‘rendering’ of an epublication &lt;RelatedProduct&gt;: use in
+        ONIX 2.1 only when the &lt;Product&gt; record describes a
+        specific rendering of an epublication content package, to
+        identify the package. Not for use in ONIX 3.0 or later
     :cvar VALUE_16: POD replacement for &lt;Product&gt; is a POD
         replacement for &lt;RelatedProduct&gt;. &lt;RelatedProduct&gt;
         is an out-of-print product replaced by a print-on-demand version
@@ -8505,6 +8535,10 @@ class List51(Enum):
         (inverse of code 35)
     :cvar VALUE_35: Is cited by &lt;Product&gt; is the object of a
         citation in &lt;RelatedProduct&gt; (inverse of code 34)
+    :cvar VALUE_36: Sales expectation Use to give the ISBN of another
+        book that had sales (both in terms of copy numbers and customer
+        profile) comparable to that the publisher or distributor
+        estimates for the product. Use in ONIX 2.1 ONLY
     :cvar VALUE_37: Is signed version of &lt;Product&gt; is a signed
         copy of &lt;RelatedProduct&gt;. Use where signed copies are
         given a distinct product identifier and can be ordered
@@ -8574,6 +8608,8 @@ class List51(Enum):
     VALUE_11 = "11"
     VALUE_12 = "12"
     VALUE_13 = "13"
+    VALUE_14 = "14"
+    VALUE_15 = "15"
     VALUE_16 = "16"
     VALUE_17 = "17"
     VALUE_18 = "18"
@@ -8594,6 +8630,7 @@ class List51(Enum):
     VALUE_33 = "33"
     VALUE_34 = "34"
     VALUE_35 = "35"
+    VALUE_36 = "36"
     VALUE_37 = "37"
     VALUE_38 = "38"
     VALUE_39 = "39"
@@ -11163,6 +11200,8 @@ class List79(Enum):
         ‘3.10.7’). Only for use in ONIX 3.0 or later – in ONIX 2.1, use
         &lt;EpubTypeVersion&gt; instead. For the most common file
         formats, code 15 and List 220 is strongly preferred
+    :cvar VALUE_11: CPSIA choking hazard warning Deprecated – use code
+        12 and List 143
     :cvar VALUE_12: US CPSIA or other international hazard warning
         Hazard warning required by US Consumer Product Safety
         Improvement Act (CPSIA) of 2008 or other US or international
@@ -11375,6 +11414,7 @@ class List79(Enum):
     VALUE_08 = "08"
     VALUE_09 = "09"
     VALUE_10 = "10"
+    VALUE_11 = "11"
     VALUE_12 = "12"
     VALUE_13 = "13"
     VALUE_14 = "14"

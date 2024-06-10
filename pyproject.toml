@@ -1,3 +1,22 @@
+#[build-system]
+#requires = ["setuptools>=42"]
+#build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "python-onix"
+version = "0.0.3"
+description = "Dataclasses for EDItEUR's ONIX standards"
+authors = ["Ömer Boratav <omerboratav@gmail.com>"]
+readme = "README.md"
+packages = [{include = "onix", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sphinx = "^7.3.7"
+xsdata = {extras = ["cli", "lxml", "soap"], version = "^24.5"}
+furo = "^2024.5.6"
+
+
 [build-system]
-requires = ["setuptools>=42"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
