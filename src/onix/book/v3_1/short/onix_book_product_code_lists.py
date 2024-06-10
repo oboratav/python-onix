@@ -1,6 +1,6 @@
 from enum import Enum
 
-__NAMESPACE__ = "http://ns.editeur.org/onix/3.0/short"
+__NAMESPACE__ = "http://ns.editeur.org/onix/3.1/short"
 
 
 class List1(Enum):
@@ -3434,17 +3434,6 @@ class List171(Enum):
     VALUE_03 = "03"
 
 
-class List172(Enum):
-    """
-    Currency zone.
-
-    :cvar EUR: Eurozone Countries that at the time being have the Euro
-        as their national currency. Deprecated
-    """
-
-    EUR = "EUR"
-
-
 class List173(Enum):
     """
     Price date role.
@@ -5282,22 +5271,6 @@ class List228(Enum):
     VALUE_06 = "06"
 
 
-class List229(Enum):
-    """
-    Gender – based on ISO 5218.
-
-    :cvar U: Unknown or unspecified Provides positive indication that
-        the gender is not known or is not specified by the sender for
-        any reason
-    :cvar F: Female
-    :cvar M: Male
-    """
-
-    U = "u"
-    F = "f"
-    M = "m"
-
-
 class List23(Enum):
     """
     Extent type.
@@ -5998,6 +5971,72 @@ class List255(Enum):
     AHL = "AHL"
 
 
+class List259(Enum):
+    """
+    Collection frequency code.
+
+    :cvar U: Unknown
+    :cvar I: Irregular No fixed publication schedule
+    :cvar E: Biennial Once every two years
+    :cvar A: Annual Yearly
+    :cvar B: Biannual Twice a year, or once per academic semester
+    :cvar T: Triannual Three times a year, or once per academic term
+    :cvar Q: Quarterly Four times a year
+    :cvar S: Bimonthly Six times per year
+    :cvar M: Monthly Once every month, or approximately twelve times per
+        year
+    :cvar F: Fortnightly Once every two weeks, or approximately twenty
+        five times per year
+    :cvar W: Weekly Or approximately fifty times per year
+    :cvar D: More frequently than weekly
+    :cvar X: No future publications Positive indication that the product
+        is the last to be published in the collection, or that no
+        further publications are planned
+    """
+
+    U = "u"
+    I = "i"
+    E = "e"
+    A = "a"
+    B = "b"
+    T = "t"
+    Q = "q"
+    S = "s"
+    M = "m"
+    F = "f"
+    W = "w"
+    D = "d"
+    X = "x"
+
+
+class List260(Enum):
+    """
+    Epublication license date role.
+
+    :cvar VALUE_14: Valid from Date on which a license becomes effective
+    :cvar VALUE_15: Valid until Date on which a license ceases to be
+        effective
+    :cvar VALUE_24: From… until date Combines From date and Until date
+        to define a period (both dates are inclusive). Use for example
+        with dateformat 06
+    """
+
+    VALUE_14 = "14"
+    VALUE_15 = "15"
+    VALUE_24 = "24"
+
+
+class List263(Enum):
+    """
+    Prize identifier type.
+
+    :cvar VALUE_01: Proprietary Note that &lt;IDTypeName&gt; is required
+        with proprietary identifiers
+    """
+
+    VALUE_01 = "01"
+
+
 class List27(Enum):
     """
     Subject scheme identifier.
@@ -6510,79 +6549,6 @@ class List27(Enum):
     D0 = "D0"
     D1 = "D1"
     D2 = "D2"
-
-
-class List28(Enum):
-    """
-    Audience type.
-
-    :cvar VALUE_01: General / adult For a non-specialist or ‘popular’
-        adult audience. Consider also adding an ONIX Adult audience
-        rating
-    :cvar VALUE_02: Children For a young audience typically up to about
-        the age of 12, not specifically for any educational purpose. An
-        audience range should also be included
-    :cvar VALUE_03: Teenage For a teenage or ‘young adult’ audience
-        typically from about the age of 12 to the late teens, not
-        specifically for any educational purpose. An audience range
-        should also be included
-    :cvar VALUE_04: Primary and secondary education Kindergarten, pre-
-        school, primary / elementary or secondary / high school
-        education. Note ‘secondary’ includes both level 2 and level 3
-        secondary education as defined in UNESCO’s ISCED 2011 (see
-        http://uis.unesco.org/en/topic/international-standard-
-        classification-education-isced). An audience range should also
-        be included
-    :cvar VALUE_11: Pre-primary education Equivalent to UNESCO’s ISCED
-        Level 0 – see http://uis.unesco.org/en/topic/international-
-        standard-classification-education-isced (note codes 11–14 are
-        specific subsets of the Primary and secondary education
-        audience, code 04). Only for use in ONIX 3.0 or later
-    :cvar VALUE_12: Primary education Equivalent to ISCED Level 1. Only
-        for use in ONIX 3.0 or later
-    :cvar VALUE_13: Lower secondary education Equivalent to ISCED Level
-        2 (general and vocational). Only for use in ONIX 3.0 or later
-    :cvar VALUE_14: Upper secondary education Equivalent to ISCED Level
-        3 (general and vocational). Only for use in ONIX 3.0 or later
-    :cvar VALUE_05: Tertiary education For tertiary education typically
-        in universities and colleges of higher education, equivalent to
-        ISCED Levels 5–7
-    :cvar VALUE_06: Professional and scholarly For an expert adult
-        audience, including professional development and academic
-        research
-    :cvar VALUE_08: Adult education For any adult audience in a formal
-        or semi-formal learning setting, eg vocational training and
-        apprenticeships (collectively, equivalent to ISCED Level 4), or
-        practical or recreational learning for adults
-    :cvar VALUE_07: EFL / TEFL / TESOL Intended for use in teaching and
-        learning English as a second, non-native or additional language.
-        Indication of the language level (eg CEFR) should be included
-        where possible. An audience range should also be included if the
-        product is (also) suitable for use in primary and secondary
-        education
-    :cvar VALUE_09: Second / additional language teaching Intended for
-        use in teaching and learning second, non-native or additional
-        languages (other than English), for example teaching German to
-        Spanish speakers. Indication of the language level (eg CEFR)
-        should be included where possible. An audience range should also
-        be included if the product is (also) suitable for use in primary
-        and secondary education. Prefer code 07 for products specific to
-        teaching English
-    """
-
-    VALUE_01 = "01"
-    VALUE_02 = "02"
-    VALUE_03 = "03"
-    VALUE_04 = "04"
-    VALUE_11 = "11"
-    VALUE_12 = "12"
-    VALUE_13 = "13"
-    VALUE_14 = "14"
-    VALUE_05 = "05"
-    VALUE_06 = "06"
-    VALUE_08 = "08"
-    VALUE_07 = "07"
-    VALUE_09 = "09"
 
 
 class List29(Enum):
